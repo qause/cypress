@@ -2,7 +2,7 @@ interface SetupWebpackDevServerOptions {
   /**
    * Location of the weppack.config Cypress should use
    */
-   webpackFilename?: string
+  webpackFilename?: string
 }
 
 /**

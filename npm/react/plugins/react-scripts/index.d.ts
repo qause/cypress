@@ -2,7 +2,7 @@ interface CRADevServerOptions {
   /**
    * Location of the weppack.config Cypress should use
    */
-   webpackConfigPath?: string
+  webpackConfigPath?: string
 }
 
 /**

@@ -2,7 +2,7 @@ interface CracoDevServerOptions {
   /**
    * The object exported of your craco.config.js file
    */
-   cracoConfig: any
+  cracoConfig: any
 }
 
 /**
@@ -23,4 +23,4 @@ declare namespace legacySetupCracoDevServer {
   export function setupCracoDevServer(devServerConfig: Cypress.DevServerConfig, options: CracoDevServerOptions): Cypress.ResolvedDevServerConfig
 }
 
-export = setupCracoDevServer;
+export = legacySetupCracoDevServer;
