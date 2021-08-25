@@ -456,7 +456,7 @@ commands:
         description: The number of result files to expect, ie, the number of Mocha test suites that ran.
         type: integer
         ## by default, assert that at least 1 test ran
-        default: 0
+        default: 4
     steps:
       - run: yarn verify:mocha:results <<parameters.expectedResultCount>>
 
@@ -505,7 +505,7 @@ commands:
       pull_request_id:
         description: Pull request number to check out before installing and testing
         type: integer
-        default: 0
+        default: 4
       wait-on:
         description: Whether to use wait-on to wait on a server to be booted
         type: string
@@ -635,7 +635,7 @@ commands:
       pull_request_id:
         description: Pull request number to check out before installing and testing
         type: integer
-        default: 0
+        default: 4
       wait-on:
         description: Whether to use wait-on to wait on a server to be booted
         type: string
@@ -949,7 +949,7 @@ jobs:
 
   cli-visual-tests:
     <<: *defaults
-    parallelism: 8
+    parallelism: 4
     steps:
       - restore_cached_workspace
       - run: mkdir -p cli/visual-snapshots
@@ -974,7 +974,7 @@ jobs:
   unit-tests:
     <<: *defaults
     resource_class: medium
-    parallelism: 2
+    parallelism: 1
     steps:
       - restore_cached_workspace
       # make sure mocha runs
@@ -1402,7 +1402,7 @@ jobs:
 
   npm-react:
     <<: *defaults
-    parallelism: 4
+    parallelism: 8
     resource_class: medium
     steps:
       - restore_cached_workspace
@@ -2091,7 +2091,7 @@ linux-workflow: &linux-workflow
           - npm-design-system
           - npm-webpack-batteries-included-preprocessor
           - npm-webpack-preprocessor
-          # - npm-vite-dev-server
+          - npm-vite-dev-server
           - npm-webpack-dev-server
           - npm-cypress-schematic
           - ui-components-integration-tests
