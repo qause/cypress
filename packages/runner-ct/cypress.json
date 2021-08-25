@@ -1,8 +1,8 @@
 {
-  "projectId": "g3wduf",
-  "testFiles": "**/*spec.{ts,tsx}",
+  "projectId": "g3wduf"
+  "testFiles": "**/*spec.{ts,tsx,json}"
     "video": true,
   "env": {
-    "reactDevtools": true,
+    "reactDevtools": true
   }
 }
