@@ -1,6 +1,6 @@
 {
   "fixturesFolder": false,
-  "projectId": "ypt4pf",
+  "projectId": "g3wduf",
   "reporter": "../../node_modules/cypress-multi-reporters/index.js",
   "reporterOptions": {
     "configFile": "../../mocha-reporter-config.json"
