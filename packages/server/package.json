@@ -159,7 +159,7 @@
     "cross-env": "6.0.3",
     "devtools-protocol": "0.0.839267",
     "eol": "0.9.1",
-    "eventsource": "1.0.7",
+    "eventsource": "2.0.2",
     "express-session": "1.16.1",
     "express-useragent": "1.0.15",
     "http-mitm-proxy": "0.7.0",
